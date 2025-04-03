@@ -1,4 +1,4 @@
-package com.kaiobrenner.CadastroDeNinjas;
+package com.kaiobrenner.CadastroDeNinjas.Ninjas;
 
 
 import jakarta.persistence.*;
@@ -13,6 +13,9 @@ public class NinjaModel {
     private String nome;
     private String email;
     private int idade;
+    @ManyToOne
+    @JoinColumn(name = "missao_id")
+    private String missao;
 
     public NinjaModel(String nome, String email, int idade) {
         this.nome = nome;

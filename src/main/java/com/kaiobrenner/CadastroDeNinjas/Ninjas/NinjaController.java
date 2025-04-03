@@ -1,4 +1,4 @@
-package com.kaiobrenner.CadastroDeNinjas;
+package com.kaiobrenner.CadastroDeNinjas.Ninjas;
 
 
 import org.springframework.web.bind.annotation.GetMapping;
