@@ -1,5 +1,6 @@
 package com.kaiobrenner.CadastroDeNinjas.Missoes;
 
+import com.kaiobrenner.CadastroDeNinjas.Ninjas.NinjaModel;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -21,4 +22,13 @@ public class MissoesService {
     public Optional<MissoesModel> listarMissaoPorId(Long id){
         return missoesRepository.findById(id);
     }
+
+    public MissoesModel criarMissao(MissoesModel missao){
+        return missoesRepository.save(missao);
+    }
+
+    public void deletarMissaoPorId(Long id){
+        missoesRepository.deleteById(id);
+    }
+
 }
