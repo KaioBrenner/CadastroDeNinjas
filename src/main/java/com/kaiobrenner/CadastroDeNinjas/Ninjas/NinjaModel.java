@@ -36,4 +36,7 @@ public class NinjaModel {
 
     private String corDoOlho;
 
+    @Column(name = "rank")
+    private String rank;
+
 }
