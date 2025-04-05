@@ -1,7 +1,6 @@
 package com.kaiobrenner.CadastroDeNinjas.Ninjas;
 
 import com.kaiobrenner.CadastroDeNinjas.Missoes.MissoesModel;
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
